@@ -14,6 +14,7 @@ class Gra {
   int liczba1, liczba2; //skladniki rownania 
   int[] odpowiedzi = new int[3];
   int czas_szczesliwy = 0; //ile czasu jeszcze ma być szczęśliwy
+  int blabalblablaba;
 
   bool dzialaj = true;
 
