@@ -9,22 +9,22 @@ using System.IO;
 class Gra {
   string tryb_gry;
 
-  int licznik = 150; //DeFacto położenie platformy; więcej=niżej
+  int licznik = 150; // DeFacto położenie platformy; więcej=niżej
   int wynik_liczba = 0;
-  int liczba1, liczba2; //skladniki rownania 
+  int liczba1, liczba2; // Składniki równania 
   int[] odpowiedzi = new int[3];
-  int czas_szczesliwy = 0; //ile czasu jeszcze ma być szczęśliwy
+  int czas_szczesliwy = 0; // Ile czasu jeszcze ma być szczęśliwy
 
   bool dzialaj = true;
 
-  Texture tlo = new Texture("canva.png"); //Tło "normalne"
-  Texture tlo2 = new Texture("canvaS2.png"); //Tło z aktywną strefą podwójnych punktów
+  Texture tlo = new Texture("canva.png"); // Tło "normalne"
+  Texture tlo2 = new Texture("canvaS2.png"); // Tło z aktywną strefą podwójnych punktów
   Texture pacmanNormal = new Texture("pacman.png");
   Texture pacmanHappy = new Texture("pacmanHappy.png");
   Texture pacmanDead = new Texture("pacmanDead.png");
   Texture pacmanWorried = new Texture("pacmanWorried.png");
   Texture platforma = new Texture("platforma2.png");
-  Texture krewtlo = new Texture("krewtlo.png");
+  Texture krew_tlo= new Texture("krewtlo.png");
   Texture czaszka = new Texture("skulltabliczka.png");
   Texture[] krew_animacja = new Texture[16];
 
@@ -39,13 +39,12 @@ class Gra {
   czaszka2_sprite,
   czaszka3_sprite;
 
-  Music
-  dobrze,
+  Music dobrze,
   zle,
   koniec,
   podklad_muzyczny;
 
-  Random rnd = new Random(); //generator liczb losowych
+  Random rnd = new Random(); // Generator liczb losowych
 
   Text[] odpowiedzi_text = new Text[3];
   Text rownanie_text = new Text("", MenuGlowne.czcionka, 200);
@@ -65,8 +64,8 @@ class Gra {
       krew_animacja[i] = new Texture("krewprawy3/" + i.ToString() + ".gif");
     krew_lewy_sprite = new Sprite();
     krew_prawy_sprite = new Sprite();
-    krew_tlo_sprite = new Sprite(krewtlo);
-    krew_tlo_prawy_sprite = new Sprite(krewtlo);
+    krew_tlo_sprite = new Sprite(krew_tlo);
+    krew_tlo_prawy_sprite = new Sprite(krew_tlo);
     czaszka1_sprite = new Sprite(czaszka);
     czaszka2_sprite = new Sprite(czaszka);
     czaszka3_sprite = new Sprite(czaszka);
