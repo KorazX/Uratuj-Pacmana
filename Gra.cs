@@ -9,16 +9,16 @@ using System.IO;
 class Gra {
   string tryb_gry;
 
-  int licznik = 150; //DeFacto położenie platformy; więcej=niżej
+  int licznik = 150; // DeFacto położenie platformy; więcej=niżej
   int wynik_liczba = 0;
-  int liczba1, liczba2; //Składniki równania 
+  int liczba1, liczba2; // Składniki równania 
   int[] odpowiedzi = new int[3];
-  int czas_szczesliwy = 0; //Ile czasu jeszcze ma być szczęśliwy
+  int czas_szczesliwy = 0; // Ile czasu jeszcze ma być szczęśliwy
 
   bool dzialaj = true;
 
-  Texture tlo = new Texture("canva.png"); //Tło "normalne"
-  Texture tlo2 = new Texture("canvaS2.png"); //Tło z aktywną strefą podwójnych punktów
+  Texture tlo = new Texture("canva.png"); // Tło "normalne"
+  Texture tlo2 = new Texture("canvaS2.png"); // Tło z aktywną strefą podwójnych punktów
   Texture pacmanNormal = new Texture("pacman.png");
   Texture pacmanHappy = new Texture("pacmanHappy.png");
   Texture pacmanDead = new Texture("pacmanDead.png");
@@ -44,7 +44,7 @@ class Gra {
   koniec,
   podklad_muzyczny;
 
-  Random rnd = new Random(); //Generator liczb losowych
+  Random rnd = new Random(); // Generator liczb losowych
 
   Text[] odpowiedzi_text = new Text[3];
   Text rownanie_text = new Text("", MenuGlowne.czcionka, 200);
